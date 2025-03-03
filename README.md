@@ -86,8 +86,7 @@ A **Napster-style P2P file-sharing** application allows users to share and downl
 
 This document provides a structured guide to developing a **Napster-style P2P file-sharing app** using TCP and UDP sockets, aligning with the user's interest in software testing, automation, and embedded C/C++. 🚀
 
----
-##Implementation Steps:
+## Implementation Steps:
 
 
 **1. Setup Central Server**
@@ -109,4 +108,3 @@ This document provides a structured guide to developing a **Napster-style P2P fi
     echo "Hello from Peer 2" > shared/file2.txt
 
     python p2p_client.py
----
