@@ -17,7 +17,7 @@ A **Napster-style P2P file-sharing** application allows users to share and downl
    - When a user searches for a file, the central server returns a list of peers that have the requested file.
 
 ### 4. **Direct Peer-to-Peer File Transfer**
-   - Once a peer is identified, file transfer happens **directly between peers** using TCP sockets.
+   - Once a peer is identified, file transfer happens **directly between peers** using TCP and UDP sockets.
    - If multiple peers have the same file, the client can choose the fastest/nearest one.
 
 ### 5. **Resumable Downloads**
@@ -48,7 +48,7 @@ A **Napster-style P2P file-sharing** application allows users to share and downl
 2. The central server checks its database and returns a **list of peers** that have the file.
 
 ### **3. Establishing a Peer-to-Peer Connection**
-1. The client selects a peer from the list and **requests the file directly** via a TCP socket connection.
+1. The client selects a peer from the list and **requests the file directly** via a TCP  and UDP socket connection.
 2. The peer verifies the request and begins streaming the file in chunks.
 3. The receiving client **assembles the file** as chunks are received.
 
@@ -66,11 +66,11 @@ A **Napster-style P2P file-sharing** application allows users to share and downl
 ### **Backend (Central Server)**
 - **Language**: Python (Flask/FastAPI) or Node.js
 - **Database**: SQLite or PostgreSQL (for indexing files and peer details)
-- **Networking**: TCP sockets for client-server communication
+- **Networking**: TCP and UDP sockets for client-server communication
 
 ### **Client (Peer Node)**
 - **Language**: Python (Socket programming)
-- **Networking**: TCP sockets for file transfer
+- **Networking**: TCP and UDP sockets for file transfer
 - **Storage**: Local filesystem for storing and managing shared/downloaded files
 - **UI**: Simple CLI-based or lightweight GUI (Tkinter/PyQt)
 
@@ -84,7 +84,7 @@ A **Napster-style P2P file-sharing** application allows users to share and downl
 
 ---
 
-This document provides a structured guide to developing a **Napster-style P2P file-sharing app** using TCP sockets, aligning with the user's interest in software testing, automation, and embedded C/C++. 🚀
+This document provides a structured guide to developing a **Napster-style P2P file-sharing app** using TCP and UDP sockets, aligning with the user's interest in software testing, automation, and embedded C/C++. 🚀
 
 
 ##Implementation Steps:
